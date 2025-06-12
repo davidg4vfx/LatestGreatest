@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const start = async() => {
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-	  imageTargetSrc: '../../assets/targets/book.mind',
+	  imageTargetSrc: '../../../assets/targets/book.mind',
     });
     const {renderer, scene, camera} = mindarThree;
 	
@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const anchor = mindarThree.addAnchor(0);
 	
-	const gltf = await loadGLTF("../../assets/models/Model_4/scene.gltf");
-	//const gltf = await loadGLTF("../../assets/models/musicband-raccoon/scene.gltf");
+	const gltf = await loadGLTF("../../../assets/models/Model_4/scene.gltf");
+	//const gltf = await loadGLTF("../../../assets/models/musicband-raccoon/scene.gltf");
 	gltf.scene.scale.set(0.241, 0.241, 0.241);
 	const clock = new THREE.Clock();
 	

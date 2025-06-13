@@ -1,6 +1,5 @@
 const THREE = window.MINDAR.IMAGE.THREE;
 import {loadGLTF} from "../../../libs/loader.js";
- //imageTargetSrc: '../../assets/targets/musicband.mind',
 
 document.addEventListener('DOMContentLoaded', () => {
   const start = async() => {
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const anchor = mindarThree.addAnchor(0);
 	
 	const gltf = await loadGLTF("../../../assets/models/Model_4/scene.gltf");
-	//const gltf = await loadGLTF("../../../assets/models/musicband-raccoon/scene.gltf");
 	gltf.scene.scale.set(0.241, 0.241, 0.241);
 	const clock = new THREE.Clock();
 	
